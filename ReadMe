@@ -5,7 +5,7 @@ Fiber
 server will use both golang and Fiber
 
 1. cd api
-2. go mod init github.com/23piyush/go-fiber-redis-shorten-url
+2. go mod init github.com/23piyush/go-redis-fiber-url-shortener
 go.mod : list of all external dependencies included in the project
 3. go mod tidy - install all the dependencies mentioned in import() through out the project
 4. docker-compose up -d  : detach mode

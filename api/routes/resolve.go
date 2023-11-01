@@ -3,7 +3,7 @@ package routes
 // for you to use the functions of this package in other packages
 
 import (
-	"github.com/akhil/fiber-url-shortener/database"
+	"github.com/23piyush/go-redis-fiber-url-shortener/database"
 	"github.com/go-redis/redis/v8"
 	"github.com/gofiber/fiber/v2"
 )
