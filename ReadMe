@@ -1,0 +1,23 @@
+Intermediate level project
+Backend using Golang
+Redis - in memory (key-value) pair database
+Fiber
+server will use both golang and Fiber
+
+1. cd api
+2. go mod init github.com/23piyush/go-fiber-redis-shorten-url
+go.mod : list of all external dependencies included in the project
+3. go mod tidy - install all the dependencies mentioned in import() through out the project
+4. docker-compose up -d  : detach mode
+Both service will start running  and you will be able to interact with running as containers are running in background in detach mode
+Go to postman, fire api - 
+POST : http://localhost:3000/api/v1
+ Body: {"url":"<url of any random youtube video>"}
+Expected output:
+ {
+     "url":"<original_url>",
+     "short":"localhost:3000/<6_digit_id>",
+     "expiry":24, // after 24 hrs, the original url will be lost from database 
+     "rate_limit":9,
+     "rate_limit_reset":30
+ }
