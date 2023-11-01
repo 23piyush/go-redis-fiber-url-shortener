@@ -9,7 +9,7 @@ server will use both golang and Fiber
 go.mod : list of all external dependencies included in the project
 3. go mod tidy - install all the dependencies mentioned in import() through out the project
 4. docker-compose up -d  : detach mode
-Both service will start running  and you will be able to interact with running as containers are running in background in detach mode
+Both service will start running  and you will be able to interact with terminal as containers are running in background in detach mode
 Go to postman, fire api - 
 POST : http://localhost:3000/api/v1
  Body: {"url":"<url of any random youtube video>"}
